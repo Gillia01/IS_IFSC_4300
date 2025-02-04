@@ -3,3 +3,23 @@ body{
     padding: 0;
     margin: 0;
 }
+
+nav{
+    background-color: #32753d;
+    color:white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display:flex;
+    align-items: center;
+    background-color: rgb(66, 60, 60);
+    padding: 10px 20px;
+    border-radius: 10px;
+}

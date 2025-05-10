@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.amgm-todo-input{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    font-size: 1rem;
+}
+
+.amgm-todo-button {
+    padding: 0.5rem 1rem;
+    border:none;
+    background-color: white;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: background 0.3s ease;
+}
+
+.amgm-todo-button:hover{
+    background-color: #e0e0e0;
+}
+
+.amgm-select select{
+    padding: 0.5 rem;
+    border: none;
+    border-raidus: 4px;
+}
+
+.amgm-todo-container {
+    display: flex;
+    justtify-content: center;
+}
+
+.amgm-todo-list {
+    list-style: none;
+    width: 60%
+}
+
+.todo{
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+.todo-item {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.complete-btn,
+.trash-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.complete-btn:hover {
+  color: green;
+  transform: scale(1.2);
+}
+
+.trash-btn:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.slide {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
